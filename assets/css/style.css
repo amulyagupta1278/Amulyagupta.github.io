@@ -19,14 +19,13 @@ body::before {
   content: "";
   position: fixed;
   background: #010e1b;
-  background-size: cover;
   left: 0;
   right: 0;
   top: 0;
-  height: 100vh;
+  height: 1000vh;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 4024px) {
   body::before {
     background-attachment: fixed;
   }
@@ -44,14 +43,18 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
+#about {
+  height: 100%; /* Full screen height */
+  position: relative;
+  overflow: hidden;
+}
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/* Ensure the canvas fills the parent section but no more */
+
 #header {
   transition: ease-in-out 0s;
   position: relative;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   z-index: 997;
@@ -131,7 +134,11 @@ h1, h2, h3, h4, h5, h6 {
   #header .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    min-height: 100%; /* Make it vertically centered in the viewport */
+    width: 100%;
   }
 }
 

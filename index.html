@@ -53,7 +53,36 @@
 </head>
 
 <body>
-  
+  <script type="text/javascript" src="assets/nodes.js"></script>
+    <script type="text/javascript">
+        var nodesjs = new NodesJs({
+            id: 'nodes',
+            width: window.innerWidth,
+            height: window.innerHeight,
+            particleSize: 2,
+            lineSize: 1,
+            particleColor: [255, 255, 255, 0.3],
+            lineColor: [255, 255, 255],
+            backgroundFrom: [25, 50, 150],
+            backgroundTo: [25, 50, 150],
+            backgroundDuration: 4000,
+            nobg: false,
+            number: window.hasOwnProperty('orientation') ? 90: 150,
+            speed: 50
+        });
+    </script>
+    <div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%;">
+        <canvas id="nodes"></canvas>
+    </div>
+    <!-- </nodes.js embedding> -->
+
+    <script type="text/javascript">
+        window.onresize = function () {
+            nodesjs.setWidth(window.innerWidth);
+            nodesjs.setHeight(window.outerHeight);
+        };
+    </script>
+  <canvas id="nodes"></canvas>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -74,8 +103,8 @@
 <!--          <li><a href="#projects"> <span>Projects</span></a></li>-->
           <li><a href="#portfolio"> <span>Projects</span></a></li>
           <li><a href="#skills"> <span>Skills</span></a></li>
-          <li><a href="https://drive.google.com/file/d/1pT-Nk6AxY9ZOWBizuDb4htA3IiUF_fSe/view?usp=sharing" target="_blank"> <span>Resume</span></a></li>
-          <!-- <li><a href="#links"> <span>Resume & Links</span></a></li> -->
+          <!-- <li><a href="https://drive.google.com/file/d/1pT-Nk6AxY9ZOWBizuDb4htA3IiUF_fSe/view?usp=sharing" target="_blank"> <span>Resume</span></a></li>-->
+          <li><a href="#links"> <span>Resume</span></a></li> 
           <li><a href="#contacts"> <span>Contact</span></a></li>
 
         </ul>
@@ -205,40 +234,37 @@
       </div>
       <div class="row">
         <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
-
-
             <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-              <img src="assets/img/education/ASU.jpg" class="img-fluid" alt="">
-              <!-- <h4 style="text-align:left;"><a href="https://www.asu.edu/" target="_blank" style="color:#12d640">Arizona State University</a><br> </h4> -->
-              <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>MS in Computer Science</em></p>
-              <h5 style="text-align:left;padding: 0px 10px;">Janurary 2021 - Present</h5>
+              <img src="assets/img/education/BITS.jpg" class="img-fluid" alt="">
+               <h4 style="text-align:left;color:#fff;padding: 5px 10px;"><a href="https://www.bits-pilani.ac.in/" target="_blank" style="color:#12d640">Birla Institute of Technology And Science, Pilani (BITS Pilani)</a><br> </h4>
+              <h5 style="text-align:left;color:#fff;padding: 5px 10px;">Data Science Minor</h5>
+              <p style="text-align:left;padding: 0px 10px;"><em>August 2019 - July 2023</em></p>
               <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Relevant Coursework</h6>
               <ul style="text-align:left;color:#fff;">
-                <li>Distributed Database Systems</li>
-                <li>Cloud Computing</li>
-                <li>Foundation Of Algorithms</li>
+                <li>Machine Learning</li>
+                <li>Foundation of Data Science</li>
+                <li>Deep Learning</li>
+                <li>Natural Language Processing</li>
+                <li>Information Retrieval</li>
               </ul>
             </div>
             <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-              <img src="assets/img/education/au.png" class="img-fluid" alt="">
-              <!-- <h4 style="text-align:left;"><a href="https://ahduni.edu.in/" target="_blank" style="color:#12d640">Ahmedabad University</a><br> </h4> -->
-              <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>B.Tech. in Information and Communication Technology</em></p>
-              <h5 style="text-align:left;padding: 0px 10px;">July 2014 - May 2018</h5>
+              <img src="assets/img/education/BITS.jpg" class="img-fluid" alt="">
+               <h4 style="text-align:left;color:#fff;padding: 5px 10px;"><a href="https://www.bits-pilani.ac.in/" target="_blank" style="color:#12d640">Birla Institute of Technology And Science, Pilani (BITS Pilani)</a><br> </h4>
+              <h5 style="text-align:left;color:#fff;padding: 5px 10px;">M.Sc. General Studies</h5>
+              <p style="text-align:left;padding: 0px 10px;"><em>August 2019 - July 2023</em></p>
               <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Relevant Coursework</h6>
               <ul style="text-align:left;color:#fff;">
-                <!-- <li>Data Structures &amp; Algorithms</li> -->
-                <li>Database Management Systems</li>
-                <!-- <li>Operating Systems</li> -->
-                <li>Algorithms &amp; Optimization for Big Data</li>
                 <li>Machine Learning</li>
-                <!-- <li>Computer Vision</li> -->
+                <li>Foundation of Data Science</li>
+                <li>Deep Learning</li>
+                <li>Natural Language Processing</li>
+                <li>Information Retrieval</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-
-
     <div class="portfolio">
     <div class="container">
       <div class="section-title">
@@ -339,11 +365,12 @@
       <div class="row">
           <div class="col-lg-12" data-aos="fade-up">
               <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://www.asu.edu/" style="color:#12d640">HCLTech, Noida</a><br> </h4>
+                <h4 style="text-align:left;"><a href="https://www.adobe.com/in/creativecloud/plans.html?promoid=WXYGHWCC&mv=other" style="color:#12d640">HCLTech, Noida</a><br> </h4>
                 <h5 style="text-align:left;">Associate Growth Software Engineer</h5>
                 <p style="text-align:left;color:#fff"><em>August 2023 – present</em></p>
                 <br>
                 <ul style="text-align:left;">
+                  <li><strong>Client:</strong> Adobe</li>
                   <li>Engineered high-performance web pages that increased user engagement by 15%, contributing to Adobe’s growth and enhanced customer experience.</li>
                   <li>Designed and executed targeted marketing campaigns that improved conversion rates from free to paid subscribers by analyzing key user metrics.</li>
                   <li>Implemented data-driven growth strategies leveraging SEO, SEM, and content marketing to increase user acquisition and brand visibility by 20%.</li>
@@ -585,24 +612,19 @@
   <section id="links" class="services">
     <div class="container">
       <div class="section-title">
-        <h2>Resume & Links</h2>
+        <h2>Resume</h2>
       </div>
       <div class="row">
         <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
           <a href="https://drive.google.com/file/d/1iHBNV2UkH5LkhAP-1hYRZ2Ez_BQ6g4S7/view?usp=sharing" target="_blank"><div class="icon"><i class="icofont-page"></i></div></a>
-          <h4 class="title"><a href="https://drive.google.com/file/d/1iHBNV2UkH5LkhAP-1hYRZ2Ez_BQ6g4S7/view?usp=sharing" target="_blank">Resume</a></h4>
+          <h4 class="title"><a href="https://drive.google.com/file/d/1iHBNV2UkH5LkhAP-1hYRZ2Ez_BQ6g4S7/view?usp=sharing" target="_blank">Resume Software</a></h4>
           <p class="description" style="color:#fff;">The link contains downloadable resume</p>
         </div>
-        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up">
-          <a href="https://github.com/rajaprerak/LeetCode_Problems" target="_blank"><div class="icon"><i class="icofont-link"></i></div></a>
-          <h4 class="title"><a href="https://github.com/rajaprerak/LeetCode_Problems" target="_blank">LeetCode Repository</a></h4>
-          <p class="description" style="color:#fff;"> The github repository contains leetcode problems solution in python.</p>
+        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+          <a href="https://drive.google.com/file/d/1iHBNV2UkH5LkhAP-1hYRZ2Ez_BQ6g4S7/view?usp=sharing" target="_blank"><div class="icon"><i class="icofont-page"></i></div></a>
+          <h4 class="title"><a href="https://drive.google.com/file/d/1iHBNV2UkH5LkhAP-1hYRZ2Ez_BQ6g4S7/view?usp=sharing" target="_blank">Resume Machine Learning</a></h4>
+          <p class="description" style="color:#fff;">The link contains downloadable resume</p>
         </div>
-        <!-- <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <a href="https://techingenious.herokuapp.com/" target="_blank"><div class="icon"><i class="icofont-page"></i></div></a>
-          <h4 class="title"><a href="https://techingenious.herokuapp.com/" target="_blank">Blog</a></h4>
-          <p class="description" style="color:#fff;">Blog containing articles on AI, coding, development</p>
-        </div> -->
       </div>
     </div>
   </section> <!--End Links Section -->
@@ -622,10 +644,10 @@
         <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>1275 E University Dr</p>
-            <p>Unit 212</p>
-            <p>Tempe, AZ 85281</p>
+            <h3>Address</h3>
+            <p>Field Colony</p>
+            <p>Vidhya Niketan Birla Public School</p>
+            <p>Loharu Road, Pilani, 333031</p>
           </div>
         </div>
 
@@ -634,10 +656,9 @@
             <i class="bx bx-share-alt"></i>
             <h3>Social Profiles</h3>
             <div class="social-links">
-              <a href="https://www.linkedin.com/in/rajaprerak" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://www.github.com/rajaprerak" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="mailto:rajaprerak@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-
+              <a href="https://www.linkedin.com/in/amulya-gupta-bits-pilani" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://github.com/amulyagupta1278" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+              <a href="mailto:amulyagupta2001@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
             </div>
           </div>
         </div>
@@ -646,15 +667,15 @@
           <div class="info-box">
             <i class="bx bx-envelope"></i>
             <h3>Email</h3>
-            <p>rajaprerak@gmail.com</p>
-            <p>pkraja@asu.edu</p>
+            <p>amulyagupta2001@gmail.com</p>
           </div>
         </div>
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-phone-call"></i>
             <h3>Contact</h3>
-            <p>+1 480-401-8112</p>
+            <p>+91 7725914756</p>
+            <p>+91 6396188891</p>
           </div>
         </div>
       </div>
