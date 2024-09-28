@@ -1,4 +1,4 @@
-# amulyagupta1278.github.io
+# [amulyagupta1278.github.io](https://amulyagupta1278.github.io)
 
 This repository hosts the source code for my personal portfolio website, showcasing my professional background, projects, and skills. The website is built using HTML, CSS, and JavaScript, and is designed to highlight my expertise in software engineering and machine learning.
 
